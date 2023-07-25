@@ -3,6 +3,7 @@ package easy
 func IsIsogram(word string) bool {
 	wordLen := len(word)
 	doRepeat := map[string]bool{}
+
 	for i := 0; i < wordLen; i++ {
 		if string(word[i]) == " " || string(word[i]) == "-" {
 			continue
@@ -14,5 +15,6 @@ func IsIsogram(word string) bool {
 			doRepeat[string(word[i])] = true
 		}
 	}
+
 	return true
 }

@@ -6,6 +6,7 @@ import (
 
 func Raindrop(num *int, res *string) string {
 	isFactor := false
+
 	if (*num % 3) == 0 {
 		isFactor = true
 		*res += "Pling"
@@ -24,5 +25,6 @@ func Raindrop(num *int, res *string) string {
 	if !isFactor {
 		*res = strconv.Itoa(*num)
 	}
+
 	return ""
 }
