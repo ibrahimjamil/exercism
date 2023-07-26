@@ -101,6 +101,7 @@ func main() {
 	fmt.Println(ParallelFrequencyCount(texts))
 
 	// hard
+	// https://exercism.org/tracks/go/exercises/forth
 	var code string = "3 5 + 2 * 10 /"
 
 	result := Forth(code)
