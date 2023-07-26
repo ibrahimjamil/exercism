@@ -1,6 +1,7 @@
 package easy
 
 import (
+	"fmt"
 	"math"
 	"strconv"
 )
@@ -16,6 +17,8 @@ func LargestSeriesProduct(series string, span int) int {
 				num, err := strconv.Atoi(string(wordSpan[wi]))
 				if err == nil {
 					product *= num
+				} else {
+					fmt.Print("didnt able to convert to number")
 				}
 			}
 			if product > largest {
