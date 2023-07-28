@@ -25,11 +25,12 @@ func ProteinTranslation(RNA string) []string {
 	for i := range RNA {
 		if i%3 == 0 && i+3 < len(RNA) {
 			splitWord := RNA[i : i+3]
+
 			if mapProteins[splitWord] == "Stop" {
 				break
-			} else {
-				res = append(res, mapProteins[splitWord])
 			}
+
+			res = append(res, mapProteins[splitWord])
 		}
 	}
 
